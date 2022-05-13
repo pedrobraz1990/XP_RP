@@ -37,8 +37,8 @@ def accelarate(_varphi, r, s, u, alpha=10, tau=2):
     return _varphi, u
 
 
-@numba.jit('Tuple((float64[:], float64[:], float64))(float64[:], float64, float64[:], float64, float64, float64[:], float64[:], float64[:], float64[:,:], float64, float64[:,:])',
-      nopython=True)
+# @numba.jit('Tuple((float64[:], float64[:], float64))(float64[:], float64, float64[:], float64, float64, float64[:], float64[:], float64[:], float64[:,:], float64, float64[:,:])',
+#       nopython=True)
 def _cycle(x, c, var, _varphi, sigma_x, Sx, budgets, pi, bounds, lambda_log, cov):
     """
     Internal numba function for computing one cycle of the CCD algorithm.

@@ -6,6 +6,8 @@ Constrained and Unconstrained Risk Budgeting Allocation in Python
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
+Forked from https://github.com/jcrichard/pyrb, primarily for **windows compatibility**.
+
 This repository contains the code for solving constrained risk budgeting
 with generalized standard deviation-based risk measure:
 
@@ -29,13 +31,13 @@ Installation
 ------------------
  Can be done using ``pip``: 
 
-    pip install git+https://github.com/jcrichard/pyrb
+    pip install git+https://github.com/pedrobraz1990/XP_RP
 
 
 Usage
 ------------------
 
-    from pyrb import EqualRiskContribution
+    from XP_RP import EqualRiskContribution
 
     ERC = EqualRiskContribution(cov)
     ERC.solve()

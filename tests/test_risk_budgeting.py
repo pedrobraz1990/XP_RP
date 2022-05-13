@@ -1,5 +1,5 @@
 import numpy as np
-from pyrb.allocation import (
+from XP_RP.allocation import (
     EqualRiskContribution,
     RiskBudgeting,
     ConstrainedRiskBudgeting,
