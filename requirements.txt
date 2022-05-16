@@ -1,0 +1,5 @@
+numpy
+quadprog
+numba
+scipy
+setuptools
