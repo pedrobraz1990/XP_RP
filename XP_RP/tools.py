@@ -1,4 +1,4 @@
-import quadprog
+# import quadprog
 
 import numpy as np
 
@@ -52,7 +52,8 @@ def quadprog_solve_qp(P, q, G=None, h=None, A=None, b=None, bounds=None):
         qp_C = -G.T
         qp_b = -h
         meq = 0
-    return quadprog.solve_qp(qp_G, qp_a, qp_C, qp_b, meq)[0]
+    # return quadprog.solve_qp(qp_G, qp_a, qp_C, qp_b, meq)[0]
+    return False
 
 
 def proximal_polyhedra(y, C, d, bound, A=None, b=None):
